@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor del mes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<div><h1>Ejercicio 6: HTML + CSS + DOM.</h1></div>
+
+</header>
+    
+    <div>
+        <p>La empresa perfumes latinos premiará a su empleado del mes (quien más dinero recaude en ventas) con una
+            comisión y requiere un programa que almacene y muestre:
+            Qué cantidad de cada productos vendió cada vendedor.
+            La suma total de dinero recolectada por cada vendedor.
+            Nombre del empleado del mes, en caso de haber vendido lo mismo indicar que fue un empate.
+            La empresa actualmente cuenta con los siguientes 4 productos que tienen los siguientes nombres y precios:
+            Aqua: 200 usd.
+            Emoción: 180 usd.
+            Alegría: 160 usd.
+            Frescura: 150 usd.
+            Y dos vendedores Juana y Pedro.
+            Notas.
+            Los resultados deben visualizarse en consola y deben activarse a través de botones.
+            El programa debe validar y mostrar un mensaje de error si no se ingresa un valor numérico.(Opcional).
+            Debe hacer uso de funciones, arrays y estructuras de control para resolver el ejercicio.
+            Realizar el ejercicio por medio de cualquiera de los métodos de salidas en JS (console, alert o document).
+        </p>
+    </div>
+    <div class="contenedorDatos">
+        <div class="datos">
+        <div>Ingrese la cantidad de productos vendido por Juana:</div>
+        <label class="Aqua" for="JuanaAqua">Aqua:</label>
+        <input type="number" id="JuanaAqua" min="0"><br>
+        <label class="Emocion" for="JuanaEmocion">Emocion:</label>
+        <input type="number" id="JuanaEmocion" min="0"><br>
+        <label class="Alegria" for="JuanaAlegria">Alegria:</label>
+        <input type="number" id="JuanaAlegria" min="0"><br>
+        <label class="Frescura" for="JuanaFrescura">Frescura:</label>
+        <input type="number" id="JuanaFrescura" min="0"><br>
+    </div>
+    <div class="datos">
+        <div>Ingrese la cantidad de productos vendido por Pedro:</div>
+        <label class="Aqua" for="PedroAqua">Aqua:</label>
+        <input type="number" id="PedroAqua" min="0"><br>
+        <label class="Emocion" for="PedroEmocion">Emocion:</label>
+        <input type="number" id="PedroEmocion" min="0"><br>
+        <label class="Alegria" for="PedroAlegria">Alegria:</label>
+        <input type="number" id="PedroAlegria" min="0"><br>
+        <label class="Frescura" for="PedroFrescura">Frescura:</label>
+        <input type="number" id="PedroFrescura" min="0"><br>
+    </div>
+    </div>
+    <div><button onclick="empleadoDelMes()">Enviar datos</button></div>
+    <div id="resultados">
+        <p id="resultadoJuana"></p>
+        <p id="resultadoPedro"></p>
+        <p id="resultadoGanador"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
